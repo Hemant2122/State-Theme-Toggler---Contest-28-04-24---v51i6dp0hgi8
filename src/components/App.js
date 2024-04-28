@@ -4,7 +4,7 @@ import "../styles/App.css";
 export default function App() {
     const [theme, setTheme] = useState(true);
     return (
-        <div className="App" id={theme === "light" ? "light" : "dark"}>
+        <div className="App" id={!theme === "light" ? "light" : "dark"}>
             <h1>Newton School</h1>
             <div>
                 <form>
